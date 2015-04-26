@@ -1,6 +1,8 @@
 var util = require('util');
 var stream = require('stream');
 
+//How to create ReadableStream.
+
 util.inherits(Counter, stream.Readable);
 
 var c = new Counter();
