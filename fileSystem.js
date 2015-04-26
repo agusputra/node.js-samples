@@ -3,6 +3,7 @@ var fs = require('fs');
 setInterval(func1, 10);
 var i = 0;
 
+//This function will print how fast to read and write file.
 function func1() {
     i++;
     console.log('\n>>>func1: ' + i);
