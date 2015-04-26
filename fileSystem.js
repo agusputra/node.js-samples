@@ -6,13 +6,12 @@ var i = 0;
 function func1() {
     i++;
     console.log('\n>>>func1: ' + i);
-    var now = new Date();
 
     fs.stat('index2.json', function (err) {
 
         //If file doesn't exist, create it.
         if (err && err.code !== 'ENOENT') {
-            fs.writeFile('index2.json', JSON.stringify({time: now}), function () {
+            fs.writeFile('index2.json', JSON.stringify({time: new Date()}), function () {
 
             });
         }
